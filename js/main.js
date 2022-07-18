@@ -33,16 +33,3 @@ $(function (){
     }, 1000);
   });
 });
-// Nice Scroll
-/*
-$(function () {
-  'use strict';
-  // Trigger Nice Scroll Plugin
-  $('html').niceScroll({
-  
-    cursorcolor: '#C9A958',
-    cursorwidth: 15,
-    cursorborderradius: 5,
-    cursorborder: '2px solid #C9A958'
-  });});
-*/
