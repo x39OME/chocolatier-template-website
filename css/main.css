@@ -1,0 +1,584 @@
+/* Start Global Rules */
+*{
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Arimo', sans-serif;
+    font-family: 'Inter', sans-serif
+}
+/* End Global Rules */
+/* Start My Freamwork*/
+:root{
+    --backgroundColor:#F5EEDE;
+    --mainColor:#C9A958;
+    --secondColor:#523629;
+    --paddingTop:60px;
+    --paddingBottom:60px;
+    --letterSpacing:3px
+}
+::selection {
+    background: var(--mainColor);
+    color: #fff
+}
+.scroll-to-top{
+    display: none;
+    width: 30px;
+    height: 30px;
+    line-height: 23px;
+    text-align: center;
+    background-color: transparent;
+    color: var(--secondColor);
+    border: 3px solid var(--mainColor);
+    border-radius: 5px;
+    position: fixed;
+    bottom: 50px;
+    right: 25px
+}
+.scroll-to-top:hover{
+    background-color:var(--mainColor);
+    color:#fff;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out
+}
+.margin-1{
+    margin: 2px 2px 0
+}
+.margin-2{
+    margin: 2px 2px 
+}
+.our-font{
+    color: var(--secondColor);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing:var(--letterSpacing)
+}
+.button{
+    padding: 5px 25px;
+    border: 2px solid var(--mainColor);
+    background-color: transparent;
+    color:var(--mainColor);
+    text-transform: uppercase;
+    font-size: 13px;
+    transition: .5s
+}
+.button:hover{
+    background-color:var(--mainColor);
+    color: #fff
+}
+/* End My Freamwork*/
+/* Start Navbar */
+.nav-transparent{
+    background-color:var(--backgroundColor) !important
+}
+.navbar-main .navbar-flex .li-color li a {
+    color:#FFF !important;
+    letter-spacing: var(--letterSpacing)
+}
+@media (max-width: 768px) {
+    .media-sm {
+        margin-top: 30px;
+        text-align: center
+    }
+}
+.navbar-flex{
+    display: flex;
+    justify-content: center
+}
+.navbar-flex ul li a{
+    color:var(--secondColor) !important;
+    margin-left: 25px;
+    margin-right: 30px;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: .3s;
+    position: relative
+}
+.navbar-flex ul li a:hover{
+    color: var(--mainColor) !important
+}
+.navbar-flex ul li a::after{
+    content: '';
+    display: none;
+    width: 0%;
+    height: 2px;
+    background-color:var(--mainColor);
+    position: absolute;
+    bottom: 0;
+    left:0;
+    transition:.5s;
+    animation-name: line-under;
+    animation-duration: .8s
+}
+.navbar-flex ul li:hover a::after{
+    display: block
+}
+@keyframes line-under {
+    from {
+        width: 0%
+    }
+    to {
+        width: 100%
+    }
+}
+/*navbar small screen change color*/
+.navbar-color{
+    color: var(--secondColor) !important
+}
+/* End Navbar */
+/* Start Header */
+.slider .carousel-inner .carousel-item{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+}
+.slider .carousel-one div img,
+.slider .carousel-two div img,
+.slider .carousel-three div img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top:100px
+}
+.slider .carousel-one {
+    background-image: url(../images/header_1.jpg)
+}
+.slider .carousel-two {
+    background-image: url(../images/header_2.jpg)
+}
+.slider .carousel-three {
+    background-image: url(../images/header_3.jpg)
+}
+/* End Header */
+/* Start Our Gelato */
+.our-gelato .info{
+    background-color: var(--backgroundColor)
+}
+.our-gelato .info p{
+    color:var(--secondColor);
+    font-size: 13px;
+    font-weight: 200
+}
+.our-gelato .info p span{
+    color:var(--secondColor);
+    font-weight: bold
+}
+@media (min-width:993px) {
+    .our-gelato .info h1,
+    .our-gelato .info p{
+        margin: 50px 0 50px 100px
+    }
+}
+@media (max-width:992px){
+    .our-gelato .info{
+        text-align: center
+    }
+    .our-gelato .info h1,
+    .our-gelato .info p{
+        margin-top: 40px
+    }
+}
+@media (min-width:993px) {
+    .our-gelato .info button{
+        margin-bottom: 30px;
+        margin: 0 0 50px 100px
+    }
+}
+@media (max-width:992px) {
+    .our-gelato .info button{
+        margin: 30px
+    }
+}
+.our-gelato .img{
+    padding: 0
+}
+.our-gelato .img img{
+    width: 100%;
+    height: 100%
+}
+/* End Our Gelato*/
+/* Start About Us */
+.about-us .img{
+    padding: 0
+}
+@media (max-width:772px){
+    .about-us .img{
+        order: 2
+    }
+}
+.about-us .img img{
+    width: 100%;
+    height: 100%
+}
+.about-us .info{
+    background-color: var(--backgroundColor)
+}
+@media (max-width:772px){
+    .about-us .info{
+        order:1
+    }
+}
+.about-us .info p{
+    color:var(--secondColor);
+    font-size: 13px;
+    font-weight: 200
+}
+.about-us .info p span{
+    color:var(--secondColor);
+    font-weight: bold
+}
+@media (min-width:993px) {
+    .about-us .info h1,
+    .about-us .info p{
+        margin: 50px 0 50px 100px
+    }
+}
+@media (max-width:992px){
+    .about-us .info{
+        text-align: center
+    }
+    .about-us .info h1,
+    .about-us .info p{
+        margin-top: 40px
+    }
+}
+@media (min-width:993px) {
+    .about-us .info button{
+        margin-bottom: 30px;
+        margin: 0 0 50px 100px
+    }
+}
+@media (max-width:992px) {
+    .about-us .info button{
+        margin: 30px
+    }
+}
+/* End About Us*/
+/*Start Day In Our Store*/
+.day .header-day{
+    background-image: url(../images/header_day.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.day .title{
+    color: #FFF;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top:var(--paddingTop)
+}
+.day .our-day{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 65px;
+}
+.day .our-day .div{
+    background-color: var(--backgroundColor);
+    width: 250px;
+    height: 250px;
+    margin-left: 5px;
+    margin-top: 50px
+}
+.day .our-day .div .text{
+    color: var(--secondColor);
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top:20px
+}
+.day .our-day .div img{
+    max-width: 180px;
+    max-height: 165px;
+    margin-left: 25px
+}
+button.btn{
+    margin: 40px auto;
+    display: block;
+}
+/* End Day In Our Store*/
+/* Start Chocolat*/
+.chocolat .news{
+    background-image: url(../images/chocolat_cake.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+    color: #fff;
+    height: 600px
+}
+@media (min-width:993px){
+    .chocolat .news button.button{
+        margin: 50px 0 20px 100px
+    }
+}
+@media (max-width:992px) {
+    .chocolat .news button.button{
+        margin-top: 50px
+    }
+}
+@media (min-width:993px){
+    .chocolat .news p,
+    .chocolat .news div{
+        margin: 0 0 20px 100px
+    }
+}
+@media (min-width:993px) {
+    .chocolat .news div,
+    .chocolat .news p{
+        margin: 0 100px
+    }
+}
+@media (max-width:992px) {
+    .chocolat .news div{
+        margin-bottom: 25px
+    }
+}
+@media (max-width:992px){
+    .chocolat .news{
+        text-align: center
+    }
+    .chocolat .news h1,
+    .chocolat .news p{
+        margin-top: 40px
+    }
+}
+.chocolat .news .title{
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+.chocolat .news div span{
+    font-size: 40px
+}
+.our-date{
+    background-color: var(--backgroundColor);
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 100%
+}
+.our-date div{
+    text-align: center;
+    align-self: center
+}
+.our-date div h3{
+    color: var(--secondColor);
+    font-size: 45px
+}
+.data{padding: 0}
+.mar{margin-top: 2px}
+.date-header img{
+    height: 300px;
+    width: 100%
+}
+/* End Chocolat*/
+/* Start Join Us*/
+.join-us .info{
+    background-color: var(--backgroundColor)
+}
+.join-us .info p{
+    color:var(--secondColor);
+    font-size: 13px;
+    font-weight: 200
+}
+.join-us .info p span{
+    color:var(--secondColor);
+    font-weight: bold
+}
+
+@media (min-width:993px) {
+    .join-us .info h1,
+    .join-us .info p{
+        margin: 50px 0 50px 100px
+    }
+}
+@media (max-width:992px){
+    .join-us .info{
+        text-align: center
+    }
+    .join-us .info h1,
+    .join-us .info p{
+        margin-top: 40px
+    }
+}
+@media (min-width:993px) {
+    .join-us .info button{
+        margin-bottom: 30px;
+        margin: 0 0 50px 100px
+    }
+}
+@media (max-width:992px) {
+    .join-us .info button{
+        margin: 30px
+    }
+}
+.join-us .info .border-bottom{
+    position: relative
+}
+.join-us .info .border-bottom::before{
+    content: '';
+    display: block;
+    width: 690px;
+    height: 1px;
+    background-color: var(--mainColor);
+    position: absolute;
+    bottom: -70px;
+    left: 205px;
+    transform: translateX(-50%)
+}
+@media (max-width:992px){
+    .join-us .info .border-bottom::before{
+        display: none
+    }
+}
+.join-us .img{
+    padding: 0
+}
+.join-us .img img{
+    width: 100%;
+    height: 100%
+}
+.join-us .our-border span{
+    position: relative;
+    text-align: center
+}
+.join-us .our-border .top::before {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: var(--mainColor);
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+.join-us .our-border .right::before {
+    content: '';
+    display: block;
+    width: 3px;
+    height: 25px;
+    background-color: var(--mainColor);
+    position: absolute;
+    top: -25px;
+    left: -40px
+}
+.join-us .our-border .left::before {
+    content: '';
+    display: block;
+    width: 3px;
+    height: 25px;
+    background-color: var(--mainColor);
+    position: absolute;
+    top: -25px;
+    left: 40px
+}
+.join-us .title{
+    color:var(--secondColor);
+    margin-top: 100px
+}
+.join-us .title .address span{
+    font-size: 20px;
+    font-weight: bold
+}
+.join-us .title .city{
+    color: #3f3f3f !important
+}
+@media(max-width:992px){
+    .join-us .title .city{
+        margin-bottom: 30px
+    }
+}
+.join-us .title h2{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 45px;
+    letter-spacing: var(--letterSpacing);
+    margin-bottom: 50px;
+    position: relative
+}
+.join-us .title h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: var(--mainColor);
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+/* End Join Us */
+/*Start Footer*/
+.footer{
+    background-color:var(--secondColor);
+    color: #fff;
+    padding: 30px 20px 15px
+}
+@media (max-width:992px){
+    .footer{
+        text-align: center
+    }
+}
+.footer .social i{
+    color: var(--mainColor);
+    background-color:#fff;
+    margin-right: 5px;
+    padding: 5px;
+    border-radius: 2px;
+    transition: .5s
+}
+@media (max-width:992px){
+    .footer .social i{
+        margin-bottom: 15px
+    }
+}
+.footer .social .fa-pinterest-p{
+    height: 26px;
+    width: 26px;
+    text-align: center
+}
+.footer .social i:hover{
+    background-color: var(--mainColor);
+    color: #fff;
+    font-size: 20px
+}
+.footer .text{
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center
+}
+.footer .text span{
+    font-size: 12px;
+    font-weight: 600
+}
+.footer .copyright p .design{
+    color: var(--mainColor) !important;
+    letter-spacing: 2px;
+    font-weight: 500
+}
+.footer .by .text span.sm-color{
+    color: var(--mainColor);
+    text-transform: lowercase;
+    font-weight: 400
+}
+.footer .by .text{
+    font-weight: 400
+}
+/* End footer*/
