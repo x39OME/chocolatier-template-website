@@ -145,8 +145,8 @@ body{
 .slider .carousel-three div img{
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
-    top:100px
+    top:160px;
+    transform: translateX(-50%)
 }
 .slider .carousel-one {
     background-image: url(../images/header_1.jpg)
