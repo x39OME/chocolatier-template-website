@@ -149,13 +149,13 @@ body{
     transform: translateX(-50%);
 }
 .slider .carousel-one {
-    background-image: url(../images/header_1.jpg)
-}
-.slider .carousel-two {
     background-image: url(../images/header_2.jpg)
 }
-.slider .carousel-three {
+.slider .carousel-two {
     background-image: url(../images/header_3.jpg)
+}
+.slider .carousel-three {
+    background-image: url(../images/header_1.jpg)
 }
 /* End Header */
 /* Start Our Gelato */
