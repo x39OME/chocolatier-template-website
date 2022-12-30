@@ -1,4 +1,4 @@
 # Template_chocolatier
 
 
-`Responsive Website Using HTML\CSS & Javascript`
+`Responsive Website Using HTML\CSS Bootstrap & Javascript `
